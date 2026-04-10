@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv MtdrSpring/backend/src/main/frontend ../frontend_tmp)",
+      "Bash(mv MtdrSpring/backend backend)",
+      "Bash(mv ../frontend_tmp frontend)",
+      "Bash(mkdir infrastructure:*)",
+      "Bash(mv MtdrSpring/terraform infrastructure/)",
+      "Bash(mv /home/poinsot/Documents/Tec/fork/oci_devops/MtdrSpring/.gitignore /home/poinsot/Documents/Tec/fork/oci_devops/infrastructure/)",
+      "Bash(mv /home/poinsot/Documents/Tec/fork/oci_devops/MtdrSpring/destroy.sh /home/poinsot/Documents/Tec/fork/oci_devops/infrastructure/)",
+      "Bash(mv /home/poinsot/Documents/Tec/fork/oci_devops/MtdrSpring/env.sh /home/poinsot/Documents/Tec/fork/oci_devops/infrastructure/)",
+      "Bash(mv /home/poinsot/Documents/Tec/fork/oci_devops/MtdrSpring/setup.sh /home/poinsot/Documents/Tec/fork/oci_devops/infrastructure/)",
+      "Bash(rmdir /home/poinsot/Documents/Tec/fork/oci_devops/MtdrSpring)"
+    ]
+  }
+}
