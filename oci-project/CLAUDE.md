@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Spring Boot 3.3.4 / Java 21 backend for a project management and task tracking system with Telegram bot integration. Uses Oracle Database (XEPDB1) via Hibernate JPA. There is no REST controller layer — this is a service/data layer only.
+Spring Boot 3.3.4 / Java 21 backend for a project management and task tracking system with Telegram bot integration. Uses Oracle Database (XEPDB1) via Hibernate JPA. Full REST API layer with JWT authentication.
 
 ## Commands
 
@@ -28,8 +28,9 @@ No linting tool is configured. The project uses Lombok, so annotation processing
 
 ## Architecture
 
-**Package**: `com.ociproject`  
-**Layers**: `model` → `repository` → `service` (no controllers)
+**Package**: `com.ociproject`
+**Layers**: `model` → `repository` → `service` → `controller`
+**Cross-cutting**: `security`, `exception`, `dto` (request/response)
 
 ### Key patterns applied everywhere
 
