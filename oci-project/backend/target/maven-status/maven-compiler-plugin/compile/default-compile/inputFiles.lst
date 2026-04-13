@@ -1,123 +1,123 @@
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/Application.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/config/OpenApiConfig.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/AuditLogController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/AuthController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/BotController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/DashboardController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/DeploymentController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/IncidentController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/KpiTypeController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/KpiValueController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/LlmAnalysisController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/ProjectController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/ReportController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/RoleController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/SprintController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/TaskController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/TeamController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/controller/UserController.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/converter/YnBooleanConverter.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/DataResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/PaginatedResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/AddProjectMemberRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/BotMessageRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateDeploymentRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateIncidentRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateKpiTypeRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateKpiValueRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateProjectRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateRoleRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateSprintRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateTaskRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateTeamRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/CreateUserRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/LoginRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/RefreshTokenRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/TimeTrackingRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/TriggerAnalysisRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateDeploymentRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateIncidentRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateKpiTypeRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateKpiValueRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateProjectRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateRoleRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateSprintRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateTaskRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateTeamRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/request/UpdateUserRequest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/AuditLogResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/BotInteractionResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/DeploymentResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/IncidentResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/KpiTypeResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/KpiValueResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/LlmAnalysisResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/LoginResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/ProjectMemberResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/ProjectResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/RoleResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/SprintResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/TaskResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/TeamDetailResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/TeamResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/TokenResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/UserResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/dto/response/WorkloadResponse.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/exception/ConflictException.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/exception/GlobalExceptionHandler.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/exception/ResourceNotFoundException.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/AuditLog.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/BotInteraction.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/BotInteractionId.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Deployment.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Incident.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/KpiType.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/KpiValue.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/LlmAnalysis.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Project.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/ProjectMember.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/ProjectMemberId.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/ProjectSprint.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/ProjectSprintId.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Role.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Sprint.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Task.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/TaskSprintHistory.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/TaskStatusHistory.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/Team.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/User.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/model/UserCredential.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/AuditLogRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/BotInteractionRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/DeploymentRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/IncidentRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/KpiTypeRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/KpiValueRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/LlmAnalysisRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/ProjectMemberRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/ProjectRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/ProjectSprintRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/RoleRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/SprintRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/TaskRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/TaskSprintHistoryRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/TaskStatusHistoryRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/TeamRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/UserCredentialRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/repository/UserRepository.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/security/JwtAuthenticationFilter.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/security/JwtTokenProvider.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/security/SecurityConfig.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/AuditLogService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/BotInteractionService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/DeploymentService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/IncidentService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/KpiService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/LlmAnalysisService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/ProjectService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/RoleService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/SprintService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/TaskService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/TeamService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/UserCredentialService.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/main/java/com/ociproject/service/UserService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\Application.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\config\OpenApiConfig.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\AuditLogController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\AuthController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\BotController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\DashboardController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\DeploymentController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\IncidentController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\KpiTypeController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\KpiValueController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\LlmAnalysisController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\ProjectController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\ReportController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\RoleController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\SprintController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\TaskController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\TeamController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\controller\UserController.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\converter\YnBooleanConverter.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\DataResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\PaginatedResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\AddProjectMemberRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\BotMessageRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateDeploymentRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateIncidentRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateKpiTypeRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateKpiValueRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateProjectRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateRoleRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateSprintRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateTaskRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateTeamRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\CreateUserRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\LoginRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\RefreshTokenRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\TimeTrackingRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\TriggerAnalysisRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateDeploymentRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateIncidentRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateKpiTypeRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateKpiValueRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateProjectRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateRoleRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateSprintRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateTaskRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateTeamRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\request\UpdateUserRequest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\AuditLogResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\BotInteractionResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\DeploymentResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\IncidentResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\KpiTypeResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\KpiValueResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\LlmAnalysisResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\LoginResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\ProjectMemberResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\ProjectResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\RoleResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\SprintResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\TaskResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\TeamDetailResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\TeamResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\TokenResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\UserResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\dto\response\WorkloadResponse.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\exception\ConflictException.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\exception\GlobalExceptionHandler.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\exception\ResourceNotFoundException.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\AuditLog.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\BotInteraction.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\BotInteractionId.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Deployment.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Incident.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\KpiType.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\KpiValue.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\LlmAnalysis.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Project.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\ProjectMember.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\ProjectMemberId.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\ProjectSprint.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\ProjectSprintId.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Role.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Sprint.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Task.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\TaskSprintHistory.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\TaskStatusHistory.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\Team.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\User.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\model\UserCredential.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\AuditLogRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\BotInteractionRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\DeploymentRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\IncidentRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\KpiTypeRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\KpiValueRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\LlmAnalysisRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\ProjectMemberRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\ProjectRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\ProjectSprintRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\RoleRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\SprintRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\TaskRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\TaskSprintHistoryRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\TaskStatusHistoryRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\TeamRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\UserCredentialRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\repository\UserRepository.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\security\JwtAuthenticationFilter.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\security\JwtTokenProvider.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\security\SecurityConfig.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\AuditLogService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\BotInteractionService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\DeploymentService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\IncidentService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\KpiService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\LlmAnalysisService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\ProjectService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\RoleService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\SprintService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\TaskService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\TeamService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\UserCredentialService.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\main\java\com\ociproject\service\UserService.java

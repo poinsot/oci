@@ -1,15 +1,15 @@
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/TestFixtures.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/integration/UserServiceIT.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/AuditLogServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/BotInteractionServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/DeploymentServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/IncidentServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/KpiServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/LlmAnalysisServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/ProjectServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/RoleServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/SprintServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/TaskServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/TeamServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/UserCredentialServiceTest.java
-/home/poinsot/Documents/Tec/oci-project/backend/src/test/java/com/ociproject/service/UserServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\integration\UserServiceIT.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\AuditLogServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\BotInteractionServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\DeploymentServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\IncidentServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\KpiServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\LlmAnalysisServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\ProjectServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\RoleServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\SprintServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\TaskServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\TeamServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\UserCredentialServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\service\UserServiceTest.java
+C:\Users\inigz\Documents\Nueva carpeta\oci\oci-project\backend\src\test\java\com\ociproject\TestFixtures.java
