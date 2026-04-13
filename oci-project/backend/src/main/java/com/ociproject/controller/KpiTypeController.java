@@ -9,6 +9,7 @@ import com.ociproject.model.KpiType;
 import com.ociproject.model.User;
 import com.ociproject.service.AuditLogService;
 import com.ociproject.service.KpiService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "KPI Types", description = "KPI type definitions and categories")
 @RestController
 @RequestMapping("/kpi-types")
 @RequiredArgsConstructor

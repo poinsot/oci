@@ -5,6 +5,7 @@ import com.ociproject.dto.request.TriggerAnalysisRequest;
 import com.ociproject.dto.response.LlmAnalysisResponse;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -16,6 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "LLM Analysis", description = "AI-generated insights and anomaly detection")
 @RestController
 @RequestMapping("/llm-analysis")
 @RequiredArgsConstructor

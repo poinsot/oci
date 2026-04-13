@@ -9,6 +9,7 @@ import com.ociproject.dto.response.ProjectResponse;
 import com.ociproject.exception.ResourceNotFoundException;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +23,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "Projects", description = "Project CRUD, members, and health metrics")
 @RestController
 @RequestMapping("/projects")
 @RequiredArgsConstructor

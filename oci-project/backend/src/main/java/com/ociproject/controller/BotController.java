@@ -9,6 +9,7 @@ import com.ociproject.model.BotInteractionId;
 import com.ociproject.model.User;
 import com.ociproject.service.BotInteractionService;
 import com.ociproject.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -21,6 +22,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Tag(name = "Bot", description = "Telegram bot interaction history and message handling")
 @RestController
 @RequestMapping("/bot")
 @RequiredArgsConstructor

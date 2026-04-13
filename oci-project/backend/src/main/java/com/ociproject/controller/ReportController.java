@@ -2,6 +2,7 @@ package com.ociproject.controller;
 
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +12,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.*;
 import java.util.stream.Collectors;
 
+@Tag(name = "Reports", description = "Burndown, velocity, cumulative flow, milestones, and PDF export")
 @RestController
 @RequestMapping("/reports")
 @RequiredArgsConstructor

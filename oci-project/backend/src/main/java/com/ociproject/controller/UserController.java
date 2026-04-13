@@ -9,6 +9,7 @@ import com.ociproject.exception.ConflictException;
 import com.ociproject.exception.ResourceNotFoundException;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "Users", description = "User CRUD and workload metrics")
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor

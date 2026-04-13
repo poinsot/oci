@@ -7,6 +7,7 @@ import com.ociproject.dto.response.TaskResponse;
 import com.ociproject.exception.ResourceNotFoundException;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -21,6 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "Tasks", description = "Task CRUD, status/sprint history")
 @RestController
 @RequestMapping("/tasks")
 @RequiredArgsConstructor

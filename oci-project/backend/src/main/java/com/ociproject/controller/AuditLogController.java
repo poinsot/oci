@@ -4,6 +4,7 @@ import com.ociproject.dto.PaginatedResponse;
 import com.ociproject.dto.response.AuditLogResponse;
 import com.ociproject.model.AuditLog;
 import com.ociproject.service.AuditLogService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Tag(name = "Audit Log", description = "Append-only audit trail filtered by user, entity, or action")
 @RestController
 @RequestMapping("/audit-log")
 @RequiredArgsConstructor

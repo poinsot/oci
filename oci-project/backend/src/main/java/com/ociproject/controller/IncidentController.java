@@ -7,6 +7,7 @@ import com.ociproject.dto.response.IncidentResponse;
 import com.ociproject.exception.ResourceNotFoundException;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -19,6 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+@Tag(name = "Incidents", description = "Incident CRUD by severity and resolution status")
 @RestController
 @RequestMapping("/incidents")
 @RequiredArgsConstructor

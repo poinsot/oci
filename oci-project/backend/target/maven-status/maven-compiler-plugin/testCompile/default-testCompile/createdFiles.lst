@@ -1,0 +1,15 @@
+com/ociproject/service/TaskServiceTest.class
+com/ociproject/service/AuditLogServiceTest.class
+com/ociproject/service/SprintServiceTest.class
+com/ociproject/service/DeploymentServiceTest.class
+com/ociproject/service/KpiServiceTest.class
+com/ociproject/service/UserCredentialServiceTest.class
+com/ociproject/service/BotInteractionServiceTest.class
+com/ociproject/TestFixtures.class
+com/ociproject/service/RoleServiceTest.class
+com/ociproject/integration/UserServiceIT.class
+com/ociproject/service/UserServiceTest.class
+com/ociproject/service/ProjectServiceTest.class
+com/ociproject/service/TeamServiceTest.class
+com/ociproject/service/IncidentServiceTest.class
+com/ociproject/service/LlmAnalysisServiceTest.class

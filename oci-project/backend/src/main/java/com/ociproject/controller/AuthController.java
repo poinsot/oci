@@ -10,6 +10,7 @@ import com.ociproject.security.JwtTokenProvider;
 import com.ociproject.service.AuditLogService;
 import com.ociproject.service.UserCredentialService;
 import com.ociproject.service.UserService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -23,6 +24,7 @@ import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
 
+@Tag(name = "Auth", description = "Login, logout, and token refresh")
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
