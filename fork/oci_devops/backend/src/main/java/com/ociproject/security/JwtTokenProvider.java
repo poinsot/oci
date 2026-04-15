@@ -65,6 +65,14 @@ public class JwtTokenProvider {
         }
     }
 
+    public String getRoleFromToken(String token) {
+        try {
+            return getClaims(token).get("role", String.class);
+        } catch (JwtException | IllegalArgumentException e) {
+            return null;
+        }
+    }
+
     public boolean isRefreshToken(String token) {
         try {
             return "refresh".equals(getClaims(token).get("type", String.class));
