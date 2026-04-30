@@ -33,10 +33,6 @@ INSERT INTO KPI_TYPES (NAME, CATEGORY, UNIT, DESCRIPTION)
 VALUES ('DISPONIBILIDAD_SERVICIO',       'RELIABILITY', 'percent', 'Uptime calculado desde incidentes CRITICAL/HIGH');
 
 INSERT INTO KPI_TYPES (NAME, CATEGORY, UNIT, DESCRIPTION)
-VALUES ('USO_CPU',                       'INFRA',       'percent', 'Uso promedio de CPU reportado por agente');
-
-INSERT INTO KPI_TYPES (NAME, CATEGORY, UNIT, DESCRIPTION)
-VALUES ('USO_MEMORIA',                   'INFRA',       'percent', 'Uso promedio de memoria RAM reportado por agente');
-
-INSERT INTO KPI_TYPES (NAME, CATEGORY, UNIT, DESCRIPTION)
 VALUES ('INCIDENTES_SEGURIDAD',          'SECURITY',    'count',   'Incidentes con TYPE=SECURITY registrados');
+
+COMMIT;
