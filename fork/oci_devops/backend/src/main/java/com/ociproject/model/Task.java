@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 public class Task {
 
     public enum Stage    { BACKLOG, SPRINT, COMPLETED }
-    public enum Status   { PENDING, IN_PROGRESS, DONE, CANCELLED, REOPENED }
+    public enum Status   { PENDING, IN_PROGRESS, DONE, BLOCKED }
     public enum Priority { LOW, MEDIUM, HIGH }
 
     @Id
@@ -47,6 +47,9 @@ public class Task {
     @Enumerated(EnumType.STRING)
     @Column(name = "PRIORITY", length = 20)
     private Priority priority;
+
+    @Column(name = "TYPE", length = 100)
+    private String type;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "CREATED_BY", nullable = false)

@@ -7,6 +7,7 @@ import com.ociproject.dto.response.TaskResponse;
 import com.ociproject.exception.ResourceNotFoundException;
 import com.ociproject.model.*;
 import com.ociproject.service.*;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
@@ -34,6 +35,7 @@ public class TaskController {
     private final UserService userService;
     private final AuditLogService auditLogService;
 
+    @Operation(summary = "List tasks", description = "Returns paginated tasks. Filter by project, sprint, assignee, stage, status, priority, type, and due-date range.")
     @GetMapping
     public ResponseEntity<?> getAll(
             @RequestParam(name = "project_id", required = false) Long projectId,
@@ -94,6 +96,7 @@ public class TaskController {
                 .build());
     }
 
+    @Operation(summary = "Get task by ID", description = "Returns a single task with full status and sprint history.")
     @GetMapping("/{taskId}")
     public ResponseEntity<TaskResponse> getById(@PathVariable Long taskId) {
         Task task = taskService.findById(taskId)
@@ -126,6 +129,7 @@ public class TaskController {
         return ResponseEntity.ok(response);
     }
 
+    @Operation(summary = "Get my tasks", description = "Returns the authenticated user's active (non-DONE, non-CANCELLED) tasks sorted by due date.")
     @GetMapping("/my")
     public ResponseEntity<?> getMyTasks(@AuthenticationPrincipal User currentUser,
                                         @RequestParam(defaultValue = "5") int limit,
@@ -138,7 +142,7 @@ public class TaskController {
         }
 
         tasks = tasks.stream()
-                .filter(t -> t.getStatus() != Task.Status.DONE && t.getStatus() != Task.Status.CANCELLED)
+                .filter(t -> t.getStatus() != Task.Status.DONE)
                 .sorted((a, b) -> {
                     if (a.getDueDate() == null && b.getDueDate() == null) return 0;
                     if (a.getDueDate() == null) return 1;
@@ -176,6 +180,7 @@ public class TaskController {
         ));
     }
 
+    @Operation(summary = "Create task", description = "Creates a new task. Automatically sets taskStage to SPRINT when a sprintId is provided, otherwise BACKLOG.")
     @PostMapping
     public ResponseEntity<?> create(@Valid @RequestBody CreateTaskRequest request,
                                     @AuthenticationPrincipal User actor,
@@ -211,6 +216,7 @@ public class TaskController {
                 .priority(request.getPriority() != null
                         ? Task.Priority.valueOf(request.getPriority())
                         : null)
+                .type(request.getType())
                 .createdBy(creator)
                 .assignedTo(assignee)
                 .dueDate(request.getDueDate())
@@ -222,6 +228,7 @@ public class TaskController {
         return ResponseEntity.status(HttpStatus.CREATED).body(TaskResponse.from(task));
     }
 
+    @Operation(summary = "Update task", description = "Updates task fields. Status and sprint changes automatically create audit history records.")
     @PutMapping("/{taskId}")
     public ResponseEntity<?> update(@PathVariable Long taskId,
                                     @RequestBody UpdateTaskRequest request,
@@ -232,6 +239,7 @@ public class TaskController {
 
         if (request.getTitle() != null) task.setTitle(request.getTitle());
         if (request.getDescription() != null) task.setDescription(request.getDescription());
+        if (request.getType() != null) task.setType(request.getType());
         if (request.getPriority() != null) task.setPriority(Task.Priority.valueOf(request.getPriority()));
         if (request.getDueDate() != null) task.setDueDate(request.getDueDate());
         if (request.getTaskStage() != null) task.setTaskStage(Task.Stage.valueOf(request.getTaskStage()));
@@ -279,6 +287,7 @@ public class TaskController {
         return ResponseEntity.ok(response);
     }
 
+    @Operation(summary = "Delete task", description = "Soft-deletes a task (sets IS_DELETED=Y and records deletedAt timestamp).")
     @DeleteMapping("/{taskId}")
     public ResponseEntity<?> delete(@PathVariable Long taskId,
                                     @AuthenticationPrincipal User actor,
@@ -292,6 +301,7 @@ public class TaskController {
         ));
     }
 
+    @Operation(summary = "Get status history", description = "Returns the full status-change audit trail for a task.")
     @GetMapping("/{taskId}/status-history")
     public ResponseEntity<?> getStatusHistory(@PathVariable Long taskId) {
         List<TaskResponse.StatusHistoryEntry> history = taskService.findStatusHistory(taskId).stream()
@@ -307,6 +317,7 @@ public class TaskController {
         return ResponseEntity.ok(Map.of("task_id", taskId, "history", history));
     }
 
+    @Operation(summary = "Get sprint history", description = "Returns the full sprint-reassignment audit trail for a task.")
     @GetMapping("/{taskId}/sprint-history")
     public ResponseEntity<?> getSprintHistory(@PathVariable Long taskId) {
         List<TaskResponse.SprintHistoryEntry> history = taskService.findSprintHistory(taskId).stream()

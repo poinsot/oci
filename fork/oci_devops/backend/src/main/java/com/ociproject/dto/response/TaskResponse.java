@@ -21,6 +21,7 @@ public class TaskResponse {
     private String taskStage;
     private String status;
     private String priority;
+    private String type;
     private Long createdBy;
     private String creatorName;
     private Long assignedTo;
@@ -68,6 +69,7 @@ public class TaskResponse {
                 .taskStage(task.getTaskStage() != null ? task.getTaskStage().name() : null)
                 .status(task.getStatus() != null ? task.getStatus().name() : null)
                 .priority(task.getPriority() != null ? task.getPriority().name() : null)
+                .type(task.getType())
                 .createdBy(task.getCreatedBy() != null ? task.getCreatedBy().getUserId() : null)
                 .creatorName(task.getCreatedBy() != null ? task.getCreatedBy().getFullName() : null)
                 .assignedTo(task.getAssignedTo() != null ? task.getAssignedTo().getUserId() : null)

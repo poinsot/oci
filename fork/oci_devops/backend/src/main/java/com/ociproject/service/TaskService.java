@@ -73,7 +73,7 @@ public class TaskService {
                 .build());
 
         task.setStatus(newStatus);
-        if (newStatus == Task.Status.DONE || newStatus == Task.Status.CANCELLED) {
+        if (newStatus == Task.Status.DONE) {
             task.setTaskStage(Task.Stage.COMPLETED);
         }
         return taskRepository.save(task);
